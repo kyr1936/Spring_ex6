@@ -29,8 +29,8 @@ public class MapperTest extends AbstractTest{
 	
 	@Test
 	public void selectList() throws Exception {
-		PageMaker pageMaker = new PageMaker();
-		List<BoardDTO> ar  = noticeDAO.getList(pageMaker);
+		
+		List<BoardDTO> ar  = noticeDAO.getList();
 		assertEquals(10, ar.size());
 	}
 	//@Test
